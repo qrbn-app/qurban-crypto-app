@@ -11,7 +11,7 @@ const About = () => {
       <section className="relative z-10 py-16 px-4">
         <div className="container mx-auto text-center max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            About Qoorban
+            About qrbn.app
           </h1>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
             Bridging sacred traditions with modern technology through blockchain innovation
@@ -26,7 +26,7 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Qoorban exists to make the sacred tradition of qurban accessible to Muslims worldwide, 
+                qrbn.app exists to make the sacred tradition of qurban accessible to Muslims worldwide, 
                 regardless of their location or circumstances. By leveraging blockchain technology, 
                 we ensure complete transparency, trust, and authenticity in every transaction.
               </p>
@@ -169,7 +169,7 @@ const About = () => {
       <section className="relative z-10 py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">How Qoorban Works</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">How qrbn.app Works</h2>
             <p className="text-lg text-gray-600">
               A simple, transparent process from selection to sacrifice
             </p>

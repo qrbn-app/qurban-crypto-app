@@ -41,7 +41,7 @@ const Navigation = ({ onConnectWallet }: NavigationProps) => {
           <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
             <span className="text-xl text-white">🌙</span>
           </div>
-          <h1 className="text-2xl font-bold text-primary">Qoorban</h1>
+          <h1 className="text-2xl font-bold text-primary">qrbn.app</h1>
         </Link>
 
         {/* Desktop Navigation */}

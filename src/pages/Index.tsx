@@ -148,7 +148,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose Qoorban?
+              Why Choose qrbn.app?
             </h3>
           </div>
           
@@ -211,13 +211,13 @@ const Index = () => {
             <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
               <span className="text-2xl text-primary">🌙</span>
             </div>
-            <h3 className="text-2xl font-bold">Qoorban</h3>
+            <h3 className="text-2xl font-bold">qrbn.app</h3>
           </div>
           <p className="text-green-100 mb-6 max-w-2xl mx-auto">
             Bridging sacred traditions with modern technology. Built with faith, powered by blockchain.
           </p>
           <div className="text-sm text-green-200">
-            © 2024 Qoorban. Built on Sui blockchain with ❤️
+            © 2024 qrbn.app. Built on Sui blockchain with ❤️
           </div>
         </div>
       </footer>
