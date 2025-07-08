@@ -17,7 +17,7 @@ interface Animal {
 
 const Animals = () => {
   const [animals, setAnimals] = useState<Animal[]>([]);
-  const [selectedToken, setSelectedToken] = useState("USDC");
+  const [selectedToken, setSelectedToken] = useState("USDT");
   const [loading, setLoading] = useState(true);
   const [selectedAnimal, setSelectedAnimal] = useState<Animal | null>(null);
   const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
@@ -87,8 +87,7 @@ const Animals = () => {
   ];
 
   const tokens = [
-    { symbol: "USDC", name: "USD Coin", icon: "💲" },
-    { symbol: "suiUSDT", name: "Sui USDT", icon: "₮" },
+    { symbol: "USDT", name: "Tether USD", icon: "₮" },
     { symbol: "BTC", name: "Bitcoin", icon: "₿" },
     { symbol: "ETH", name: "Ethereum", icon: "Ξ" },
   ];

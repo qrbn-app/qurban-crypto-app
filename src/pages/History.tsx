@@ -30,7 +30,7 @@ const History = () => {
       animalType: "cow",
       shares: 1,
       amount: 150,
-      token: "USDC",
+      token: "USDT",
       date: "2024-06-18T10:30:00Z",
       txHash: "0x1234567890abcdef",
       status: "success"
@@ -41,7 +41,7 @@ const History = () => {
       animalType: "goat",
       shares: 1,
       amount: 450,
-      token: "USDC",
+      token: "USDT",
       date: "2024-06-15T14:20:00Z",
       txHash: "0x9876543210fedcba",
       status: "success"
@@ -52,7 +52,7 @@ const History = () => {
       animalType: "sheep",
       shares: 1,
       amount: 380,
-      token: "ETH",
+      token: "BTC",
       date: "2024-06-10T09:15:00Z",
       txHash: "0x1111222233334444",
       status: "pending"
@@ -63,7 +63,7 @@ const History = () => {
       animalType: "cow",
       shares: 1,
       amount: 150,
-      token: "USDC",
+      token: "ETH",
       date: "2024-06-05T16:45:00Z",
       txHash: "0x5555666677778888",
       status: "success"

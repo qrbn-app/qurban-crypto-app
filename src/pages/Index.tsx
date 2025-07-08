@@ -9,7 +9,7 @@ import { IslamicPattern } from "@/components/IslamicPattern";
 import { Link } from "react-router-dom";
 
 const Index = () => {
-  const [selectedToken, setSelectedToken] = useState("USDC");
+  const [selectedToken, setSelectedToken] = useState("USDT");
 
   // Mock data for featured animals
   const featuredAnimals = [
@@ -46,8 +46,7 @@ const Index = () => {
   ];
 
   const tokens = [
-    { symbol: "USDC", name: "USD Coin", icon: "💲" },
-    { symbol: "suiUSDT", name: "Sui USDT", icon: "₮" },
+    { symbol: "USDT", name: "Tether USD", icon: "₮" },
     { symbol: "BTC", name: "Bitcoin", icon: "₿" },
     { symbol: "ETH", name: "Ethereum", icon: "Ξ" },
   ];

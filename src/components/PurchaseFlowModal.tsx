@@ -56,11 +56,10 @@ const PurchaseFlowModal = ({
 
   const getTokenIcon = (token: string) => {
     switch (token) {
-      case "USDC": return "💲";
-      case "suiUSDT": return "₮";
+      case "USDT": return "₮";
       case "BTC": return "₿";
       case "ETH": return "Ξ";
-      default: return "💲";
+      default: return "₮";
     }
   };
 
