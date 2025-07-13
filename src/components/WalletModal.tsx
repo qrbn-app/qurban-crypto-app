@@ -1,5 +1,9 @@
-
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -15,27 +19,27 @@ const WalletModal = ({ isOpen, onClose, onConnect }: WalletModalProps) => {
       name: "Sui Wallet",
       icon: "🟦",
       description: "Official Sui wallet extension",
-      popular: true
+      popular: true,
     },
     {
-      name: "Suiet Wallet", 
+      name: "Suiet Wallet",
       icon: "🔵",
       description: "Multi-chain wallet with Sui support",
-      popular: false
+      popular: false,
     },
     {
       name: "Ethos Wallet",
       icon: "⚡",
       description: "User-friendly Sui wallet",
-      popular: false
-    }
+      popular: false,
+    },
   ];
 
   const handleWalletConnect = (walletName: string) => {
     console.log(`Connecting to ${walletName}...`);
-    // Mock wallet connection - generate a fake address
-    const mockAddress = `0x${Math.random().toString(16).substr(2, 40)}`;
-    onConnect(mockAddress);
+    // Mock wallet connection - use admin address for testing
+    const adminAddress = "0x1234567890123456789012345678901234567890";
+    onConnect(adminAddress);
   };
 
   return (
@@ -46,10 +50,10 @@ const WalletModal = ({ isOpen, onClose, onConnect }: WalletModalProps) => {
             Connect Your Wallet
           </DialogTitle>
         </DialogHeader>
-        
+
         <div className="space-y-3 py-4">
           {wallets.map((wallet) => (
-            <Card 
+            <Card
               key={wallet.name}
               className="border-2 hover:border-primary cursor-pointer transition-all duration-200 hover:shadow-md"
               onClick={() => handleWalletConnect(wallet.name)}
@@ -59,14 +63,18 @@ const WalletModal = ({ isOpen, onClose, onConnect }: WalletModalProps) => {
                   <span className="text-2xl">{wallet.icon}</span>
                   <div>
                     <div className="flex items-center space-x-2">
-                      <h3 className="font-medium text-gray-900">{wallet.name}</h3>
+                      <h3 className="font-medium text-gray-900">
+                        {wallet.name}
+                      </h3>
                       {wallet.popular && (
                         <span className="bg-accent text-accent-foreground text-xs px-2 py-1 rounded-full">
                           Popular
                         </span>
                       )}
                     </div>
-                    <p className="text-sm text-gray-500">{wallet.description}</p>
+                    <p className="text-sm text-gray-500">
+                      {wallet.description}
+                    </p>
                   </div>
                 </div>
                 <div className="text-gray-400">→</div>

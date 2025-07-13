@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -48,18 +47,18 @@ const AppContent = () => {
           <Route path="/about" element={<About />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/history" element={<History />} />
-          <Route 
-            path="/admin" 
+          <Route
+            path="/admin"
             element={
               <ProtectedRoute>
                 <Admin />
               </ProtectedRoute>
-            } 
+            }
           />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
-      <WalletModal 
+      <WalletModal
         isOpen={isWalletModalOpen}
         onClose={() => setIsWalletModalOpen(false)}
         onConnect={handleWalletConnected}
